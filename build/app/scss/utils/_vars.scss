@@ -1,8 +1,6 @@
-$root-fs: 10px !default;
-$base-fs: 1.6rem !default;
 $base-fw: 400 !default;
-$base-ff: "Font", sans-serif !default;
-$base-trn: all 0.15s ease-in 0s !default;
+$base-ff: "Montserrat", sans-serif !default;
+$base-trn: all 0.2s ease-in 0s !default;
 
 $base-color: #000000;
 $main-color: #333333;
@@ -12,3 +10,7 @@ $accent-color: $main-color;
 $bg-selection-color: $main-color;
 $text-selection-color: $color-1;
 $link: $base-color;
+
+$sh-1: 0 10px 10px 0 rgba(#000, 0.03);
+$sh-2: 10px 10px 30px 0 rgba(#000, 0.1);
+$sh-3: 10px 5px 30px 0 rgba(#000, 0.15);

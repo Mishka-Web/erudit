@@ -5,12 +5,71 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	gap: 0.5rem 1.6rem;
+	gap: 5px 16px;
 	flex: 0 0 auto;
 	text-decoration: none;
 	transition: $base-trn;
-	font-size: 1.6rem;
-	min-height: 4.4rem;
-	font-weight: 600;
-	padding: 0 1.5rem;
+	font-size: 16px;
+
+	&.btn {
+		&:hover {
+			text-decoration: none;
+			color: unset;
+		}
+
+		&-primary {
+			color: #fff;
+			background-color: #f56d45;
+			font-weight: 700;
+			font-size: 24px;
+			border-radius: 12px;
+			min-height: 79px;
+			padding-inline: 48px;
+
+			&:hover {
+				background-color: darken(#f56d45, 10%);
+				color: #fff;
+			}
+		}
+
+		&-grey {
+			font-size: 16px;
+			font-weight: 400;
+			padding-inline: 28px;
+			min-height: 40px;
+			border-radius: 12px;
+			text-align: center;
+			background-color: #e5e5e5;
+
+			&:hover {
+				background-color: darken(#e5e5e5, 5%);
+			}
+		}
+
+		&-solid {
+			border: 1px solid #C9C9C9;
+			padding-inline: 19px;
+			font-size: 14px;
+			background-color: #fff;
+
+			&.active {
+				background-color: #3facfd;
+				border-color: transparent;
+				color: #fff;
+				font-weight: 700;
+
+				.icon {
+					filter: brightness(0) invert(1);
+				}
+
+				&:hover {
+					background-color: darken(#3facfd, 7.5%);
+				}
+			}
+
+			&:not(.active):hover {
+				background-color: darken(#fff, 3%);
+			}
+		}
+	}
 }

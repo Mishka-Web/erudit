@@ -1,25 +1,57 @@
 .main-title {
-
+	font-size: 48px;
+	font-weight: 600;
 }
 
 .title {
-
+	font-size: 32px;
+	font-weight: 600;
 }
 
 .subtitle {
-
-}
-
-.text {
-
+	font-size: 22px;
+	font-weight: 600;
 }
 
 .content {
+	font-size: 16px;
+	
 	& > * {
 		display: block;
 
 		&:not(:last-child) {
-			margin-bottom: 2rem;
+			margin-bottom: 24px;
+		}
+	}
+
+	&--list-with-icons {
+		:where(ul, ol) {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+
+			li {
+				display: inline-flex;
+				align-items: flex-start;
+				gap: 15px;
+
+				p {
+					b {
+						display: inline-block;
+						font-weight: 600;
+					}
+				}
+
+				&::before {
+					content: "";
+					display: inline-block;
+					@include box(17px, 18px);
+					object-fit: contain;
+					object-position: center;
+					flex: 0 0 auto;
+					background: url("../img/icons/star.svg") center/contain no-repeat;
+				}
+			}
 		}
 	}
 }

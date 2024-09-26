@@ -18,7 +18,10 @@ const CONFIG = {
 		remoteFolder: "",
 	},
 	JS: {
-		libs: ["app/libs/jquery/jquery.min.js"],
+		libs: [
+			"app/libs/jquery/jquery.min.js",
+			"app/libs/swiper/js/swiper.min.js",
+		],
 	},
 };
 

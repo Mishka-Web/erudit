@@ -1,3 +1,102 @@
 .footer {
 	flex: 0 0 auto;
+
+	&__logo {
+		display: inline-flex;
+	}
+
+	&-inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-top {
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 12px;
+			padding-block: 28px;
+			padding-inline: 70px;
+			border-block-start: 1px solid #d9d9d9;
+		}
+	}
+
+	&-bottom {
+		margin-block-start: auto;
+
+		.container {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+			min-height: 91px;
+			gap: 10px;
+			padding: 8px 0 16px;
+			border-block-start: 1px solid #d9d9d9;
+		}
+
+		&__wrap-logo {
+			display: flex;
+			align-items: flex-end;
+			gap: 8px;
+			font-size: 14px;
+			font-weight: 400;
+			color: #a0a0a0;
+
+			& > p {
+				margin-block-end: 8px;
+			}
+		}
+
+		&__link {
+			color: #a0a0a0;
+			font-size: 14px;
+			font-weight: 300;
+			text-decoration: none;
+			border-block-end: 1px solid #a0a0a0;
+		}
+	}
+
+	&-middle {
+		.container {
+			padding-block: 40px;
+			border-block-start: 1px solid #d9d9d9;
+		}
+	}
+
+	&__nav {
+		font-size: 16px;
+		font-weight: 400;
+
+		& > ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 12px;
+
+			& > li {
+				& > :where(p, span, a) {
+					display: inline-block;
+					font-size: 18px;
+					font-weight: 600;
+					margin-block-end: 16px;
+				}
+
+				& > ul {
+					display: flex;
+					flex-direction: column;
+					gap: 16px;
+
+					& > li {
+						& > a {
+							&:hover {
+								text-decoration: none;
+								color: #f56d45;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

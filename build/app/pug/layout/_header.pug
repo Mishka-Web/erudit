@@ -1,3 +1,74 @@
-header.header 
-	.container 
-		.header-inner
+header.header
+	.header-inner
+		.header-top
+			.container 
+				.header-top__block-left
+					a.header__logo(href="/") 
+						img.icon(src="./img/logo.svg", alt="")
+
+					.header__menu 
+						button.header__menu-btn(data-toggle='top-menu')
+							img.icon.icon-menu(src="./img/icons/menu.svg", alt="")
+							span Каталог
+
+						.header__menu-box(data-box-menu) 
+							.header__menu-list 
+								ul 
+									li 
+										a(href="#") Мебель
+									li 
+										a(href="#") Технические средства
+									li 
+										a(href="#") Оснащение кабинетов
+									li 
+										a(href="#") Столовая и пищеблок
+									li 
+										a(href="#") Спортивный зал
+									li 
+										a(href="#") Актовый зал
+									li 
+										a(href="#") Медицинский кабинет
+									li 
+										a(href="#") Кабинет психолога
+									li 
+										a(href="#") Кабинет логопеда
+									li 
+										a(href="#") Сенсорная комната
+									li 
+										a(href="#") Внеурочная деятельность
+									li 
+										a(href="#") Пришкольный участок
+
+					form.header-search(action="")
+						input(type="text" placeholder="Поиск") 
+						button(type="submit")
+							img.icon(src="./img/icons/search.svg", alt="")
+
+				.header-top__block-right 
+					.header-top__block-info
+						p Пн-Пт: 8:00 - 17:00
+						a(href="tel:+7 (343) 300-93-04") +7 (343) 300-93-04
+
+					.header-top__box-panel
+						a(href="#")
+							img.icon(src="./img/icons/cart.svg", alt="") 
+						a(href="#")
+							img.icon(src="./img/icons/user.svg", alt="") 
+
+		.header-bottom
+			.container 
+				nav.header__nav 
+					ul 
+						li 
+							a(href="/") Главная 
+						li 
+							a(href="/") О компании 
+						li 
+							a(href="/") Условия работы 
+						li 
+							a(href="/") Полезное 
+						li 
+							a(href="/") Готовые решения 
+						li 
+							a(href="/") Контакты 
+			

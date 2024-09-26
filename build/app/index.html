@@ -3,23 +3,817 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="css/main.min.css">
     <title>Главная</title>
   </head>
   <body>
-    <header class="header"> 
-      <div class="container"> 
-        <div class="header-inner"></div>
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-top">
+          <div class="container"> 
+            <div class="header-top__block-left"><a class="header__logo" href="/"> <img class="icon" src="./img/logo.svg" alt=""></a>
+              <div class="header__menu"> 
+                <button class="header__menu-btn" data-toggle="top-menu"><img class="icon icon-menu" src="./img/icons/menu.svg" alt=""><span>Каталог</span></button>
+                <div class="header__menu-box" data-box-menu> 
+                  <div class="header__menu-list"> 
+                    <ul> 
+                      <li> <a href="#">Мебель</a></li>
+                      <li> <a href="#">Технические средства</a></li>
+                      <li> <a href="#">Оснащение кабинетов</a></li>
+                      <li> <a href="#">Столовая и пищеблок</a></li>
+                      <li> <a href="#">Спортивный зал</a></li>
+                      <li> <a href="#">Актовый зал</a></li>
+                      <li> <a href="#">Медицинский кабинет</a></li>
+                      <li> <a href="#">Кабинет психолога</a></li>
+                      <li> <a href="#">Кабинет логопеда</a></li>
+                      <li> <a href="#">Сенсорная комната</a></li>
+                      <li> <a href="#">Внеурочная деятельность</a></li>
+                      <li> <a href="#">Пришкольный участок</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <form class="header-search" action="">
+                <input type="text" placeholder="Поиск">
+                <button type="submit"><img class="icon" src="./img/icons/search.svg" alt=""></button>
+              </form>
+            </div>
+            <div class="header-top__block-right"> 
+              <div class="header-top__block-info">
+                <p>Пн-Пт: 8:00 - 17:00</p><a href="tel:+7 (343) 300-93-04">+7 (343) 300-93-04</a>
+              </div>
+              <div class="header-top__box-panel"><a href="#"><img class="icon" src="./img/icons/cart.svg" alt=""></a><a href="#"><img class="icon" src="./img/icons/user.svg" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container"> 
+            <nav class="header__nav"> 
+              <ul> 
+                <li> <a href="/">Главная </a></li>
+                <li> <a href="/">О компании </a></li>
+                <li> <a href="/">Условия работы </a></li>
+                <li> <a href="/">Полезное </a></li>
+                <li> <a href="/">Готовые решения </a></li>
+                <li> <a href="/">Контакты </a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main">
       <div class="wrapper">
+        <section class="block block-intro"> 
+          <div class="container"> 
+            <div class="block__content"> 
+              <div class="block-intro__box"> <img class="block-intro__bg-img" src="./img/intro/bg.png" alt="">
+                <h1 class="main-title h1">Оснащаем образовательные учреждения всем необходимым</h1>
+                <p> <b>с доставкой по России</b></p>
+                <p class="block-intro__text block-intro__text--bold">Более 9 000 наименований:</p>
+                <p class="block-intro__text">от предметных кабинетов и спортзала до пищеблока и пришкольного участка</p><a class="btn btn-primary" href="#">Получить полный каталог</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="block block-catalog"> 
+          <div class="container"> 
+            <div class="heading"> 
+              <h2 class="title">Каталог продукции</h2>
+            </div>
+            <div class="grid-items"> 
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-1.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-2.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-3.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-4.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-5.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-6.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-7.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-8.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-9.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-10.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-11.png" alt=""></div>
+                </div>
+              </article>
+              <article class="card"> 
+                <div class="card-wrapper">
+                  <div class="card-content"> 
+                    <h4 class="card__title">Мебель</h4><a class="card__btn btn btn-grey" href="#">Подробнее</a>
+                  </div>
+                  <div class="card__image"> <img class="icon" src="./img/products/img-12.png" alt=""></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="block block-key-values">
+          <div class="container"> 
+            <div class="block-key-values__wrapper"> 
+              <div class="heading"> 
+                <h2 class="title">Ключевые ценности</h2>
+              </div>
+              <div class="content content--list-with-icons">
+                <p>Мы понимаем, что основная задача школ – это развитие детей, формирование основ будущих поколений. Наша компания существует для того, чтобы помочь школам, нашим клиентам, выполнять эту важнейшую миссию.</p>
+                <ul> 
+                  <li> 
+                    <p>Мы работаем исключительно с государственными учреждениями. Это означает, что мы хорошо разбираемся в особенностях работы наших клиентов. Федеральные законы №44 и №223 для нас не пустой звук. И наша экспертность экономит нашим клиентам рабочее время и усилия </p>
+                  </li>
+                  <li>
+                    <p>У нас есть возможность оплаты по факту поставки. Это означает, что наши клиенты могут сперва получить товар и проверить его работоспособность, а только после этого – оплатить. Это снимает с наших клиентов все риски.</p>
+                  </li>
+                  <li>
+                    <p>Мы осуществляем сборку и монтаж. Мы не просто доставим груз, но и поднимем на нужный этаж, произведем сборку и монтаж. Нашим клиентам не нужно искать мастеров или привлекать родителей учеников.</p>
+                  </li>
+                  <li>
+                    <p>У нас широкий ассортимент. Это означает, что нашим клиентам не нужно обращаться в 10 разных компаний, заключать 10 разных договоров поставки и затем контролировать 10 разных отгрузок. Достаточно просто обратиться к нам, и мы привезем весь груз в одной поставке.</p>
+                  </li>
+                  <li>
+                    <p>Вся наша продукция соответствует ФГОС. В случае любой проверки наши клиенты смогут предоставить комиссии все необходимые сертификаты, декларации и отказные письма.</p>
+                  </li>
+                  <li>
+                    <p>На весь наш товар распространяется гарантия. Это означает, что если после доставки продукции наши клиенты обнаружат повреждения или техническую неисправность – то мы заменим товар за свой счет.</p>
+                  </li>
+                  <li>
+                    <p>Мы работаем по всей России. Это означает, что любое образовательное учреждение, независимо от местоположения, может стать нашим клиентом.</p>
+                  </li>
+                </ul>
+                <p>Эти ценности мы создаем для каждого нашего клиента. Убедитесь в этом! Выбирайте товары, добавляйте их в корзину, оставляйте заявку – и мы сделаем всё остальное.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="block block-vars-products">
+          <div class="container">
+            <div class="tabs"> 
+              <div class="tabs__list"> 
+                <ul> 
+                  <li> 
+                    <button class="active" type="button" data-toggle="tab" data-target="#new">Новые поступления</button>
+                  </li>
+                  <li> 
+                    <button type="button" data-toggle="tab" data-target="#recommend">Рекомендуемые</button>
+                  </li>
+                  <li> 
+                    <button type="button" data-toggle="tab" data-target="#popular">Популярные</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs__box"> 
+                <div class="tabs__box-item" data-target="#new">
+                  <div class="block-vars-products__slider">
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination swiper-pagination--numbers"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__box-item" data-target="#recommend">
+                  <div class="block-vars-products__slider">
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination swiper-pagination--numbers"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__box-item" data-target="#popular">
+                  <div class="block-vars-products__slider">
+                    <div class="swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="swiper-slide"> 
+                          <article class="card-prod card">
+                            <div class="card-prod__wrapper"> 
+                              <div class="card-prod__btns"> <a class="card-prod__btn card-prod__btn--check" href="#">Посмотреть</a><a class="card-prod__btn card-prod__btn--compare" href="#">Сравнить</a></div>
+                              <div class="card-prod__image"> <img class="icon" src="./img/products/img-13.png" alt=""></div>
+                              <div class="card-prod__info"> 
+                                <h4 class="card-prod__title">Стол дидактический с комплектом</h4>
+                                <p class="card-prod__price">41 300</p>
+                              </div>
+                              <div class="card-prod__footer"> 
+                                <button class="btn btn-solid" type="button"><span>В избранное</span><img class="icon" src="./img/icons/heart.png" alt=""></button>
+                                <button class="btn btn-primary" type="button">Купить</button>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination swiper-pagination--numbers"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="block block-advantages">
+          <div class="container"> 
+            <div class="heading">
+              <h2 class="title">Наши преимущества</h2>
+            </div>
+          </div>
+          <div class="grid-items__wrapper">
+            <div class="container">
+              <div class="grid-items"> 
+                <article class="card-adv"> 
+                  <div class="card-adv__wrapper"> <img class="icon" src="./img/advantages/icon1.svg" alt="">
+                    <p>Качество товара</p>
+                  </div>
+                </article>
+                <article class="card-adv"> 
+                  <div class="card-adv__wrapper"> <img class="icon" src="./img/advantages/icon2.svg" alt="">
+                    <p>Лучшие цены</p>
+                  </div>
+                </article>
+                <article class="card-adv"> 
+                  <div class="card-adv__wrapper"> <img class="icon" src="./img/advantages/icon3.svg" alt="">
+                    <p>Быстрая доставка</p>
+                  </div>
+                </article>
+                <article class="card-adv">
+                  <div class="card-adv__wrapper"> <img class="icon" src="./img/advantages/icon4.svg" alt="">
+                    <p>Наличие товара</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="block block-emails"> 
+          <div class="container">
+            <div class="heading">
+              <h2 class="title">Благодарственные письма</h2>
+            </div>
+            <div class="block-emails__slider"> 
+              <div class="swiper">
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide"> <a href="./img/emails/img-1.png" data-fancybox> <img class="icon" src="./img/emails/img-1.png" alt=""></a></div>
+                  <div class="swiper-slide"> <a href="./img/emails/img-2.png" data-fancybox> <img class="icon" src="./img/emails/img-2.png" alt=""></a></div>
+                  <div class="swiper-slide"> <a href="./img/emails/img-3.png" data-fancybox> <img class="icon" src="./img/emails/img-3.png" alt=""></a></div>
+                  <div class="swiper-slide"> <a href="./img/emails/img-4.png" data-fancybox> <img class="icon" src="./img/emails/img-4.png" alt=""></a></div>
+                  <div class="swiper-slide"> <a href="./img/emails/img-4.png" data-fancybox> <img class="icon" src="./img/emails/img-4.png" alt=""></a></div>
+                  <div class="swiper-slide"> <a href="./img/emails/img-4.png" data-fancybox> <img class="icon" src="./img/emails/img-4.png" alt=""></a></div>
+                  <div class="swiper-slide"> <a href="./img/emails/img-4.png" data-fancybox> <img class="icon" src="./img/emails/img-4.png" alt=""></a></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination--numbers"></div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="footer"> 
-      <div class="container"> 
-        <div class="footer-inner"></div>
+      <div class="footer-inner">
+        <div class="footer-top"> 
+          <div class="container"> 
+            <p>Екатеринбург, улица Коминтерна, д. 16</p><a href="tel:+7 (343) 300-93-04">+7 (343) 300-93-04</a>
+            <p>Пн-Пт: 08:00 - 17:00</p><a href="mailto:info@erudit-snab.ru">info@erudit-snab.ru</a>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <div class="container">
+            <nav class="footer__nav"> 
+              <ul> 
+                <li> 
+                  <p>Информация</p>
+                  <ul> 
+                    <li> <a href="#">О компании</a></li>
+                    <li> <a href="#">Условия работы</a></li>
+                    <li> <a href="#">Участие в торгах</a></li>
+                    <li> <a href="#">Сметный отдел</a></li>
+                  </ul>
+                </li>
+                <li> 
+                  <p>Служба поддержки</p>
+                  <ul> 
+                    <li> <a href="#">Связаться с нами</a></li>
+                    <li> <a href="#">Возврат товара</a></li>
+                    <li> <a href="#">Карта сайта</a></li>
+                  </ul>
+                </li>
+                <li> 
+                  <p>Дополнительно</p>
+                  <ul> 
+                    <li> <a href="#">Производители</a></li>
+                    <li> <a href="#">Товары со скидкой</a></li>
+                    <li> <a href="#">Работа у нас</a></li>
+                  </ul>
+                </li>
+                <li> 
+                  <p>Личный кабинет</p>
+                  <ul> 
+                    <li> <a href="#">Личный кабинет</a></li>
+                    <li> <a href="#">История заказов</a></li>
+                    <li> <a href="#">Мои закладки</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom"> 
+          <div class="container"> 
+            <div class="footer-bottom__wrap-logo"> <a class="footer__logo logo" href="/"><img class="icon" src="./img/logo.svg" alt=""></a>
+              <p>© 2024. ТПК Эрудит</p>
+            </div><a class="footer-bottom__link" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="js/scripts.min.js"></script>
