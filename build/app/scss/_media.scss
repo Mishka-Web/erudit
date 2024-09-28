@@ -18,8 +18,79 @@ $breakpoints: (
 	}
 }
 
+@include mq("laptop") {
+	.header-top__block-right {
+		display: none;
+	}
+
+	.header-search {
+		max-width: 100%;
+	}
+}
+
+@include mq("tablet-wide") {
+	.card-prod__footer {
+		grid-template-columns: 1fr;
+	}
+
+	.header__menu-list > ul > li > ul {
+		display: none;
+	}
+
+	.header__menu-btn {
+		font-size: 0;
+		padding-inline: 12px;
+
+		span {
+			display: none;
+		}
+	}
+
+	.card-prod {
+		padding-block-end: 24px;
+	}
+
+	.block-emails__slider .swiper-slide img {
+		min-height: 325px;
+	}
+
+	.header-bottom {
+		display: none;
+	}
+}
+
+@include mq("tablet") {
+	.card-prod__footer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.footer__nav > ul {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.header-search {
+		display: none;
+	}
+
+	.header__menu {
+		margin-inline: auto 0;
+	}
+
+	.header__menu-box {
+		inset-inline-start: auto;
+		inset-inline-end: 0;
+	}
+}
+
 @include mq("mobile") {
 	.container {
 		--bs-gutter-x: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.card-prod__footer {
+		grid-template-columns: 1fr;
 	}
 }

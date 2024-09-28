@@ -10,12 +10,12 @@
 /** Configuration for FTP and JavaScript libs **/
 const CONFIG = {
 	ftp: {
-		login: "",
-		pass: "",
-		host: "",
+		host: "h12.netangels.ru",
+		login: "c18416_frontend",
+		pass: "AixNUP1LwHXhfujc",
 		port: 21,
 		localFiles: ["./dist/**/*"],
-		remoteFolder: "",
+		remoteFolder: "/www/erudit/",
 	},
 	JS: {
 		libs: [

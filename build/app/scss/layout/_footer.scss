@@ -11,10 +11,13 @@
 	}
 
 	&-top {
+		font-size: 18px;
+
 		.container {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			flex-wrap: wrap;
 			gap: 12px;
 			padding-block: 28px;
 			padding-inline: 70px;
@@ -72,7 +75,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
-			gap: 12px;
+			gap: 32px 24px;
 
 			& > li {
 				& > :where(p, span, a) {
